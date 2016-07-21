@@ -8,12 +8,3 @@ config :my_app, MyApp.Endpoint,
 
 # Print only warnings and errors during test
 config :logger, level: :warn
-
-# Configure your database
-config :my_app, MyApp.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "my_app_test",
-  hostname: "localhost",
-  pool: Ecto.Adapters.SQL.Sandbox
